@@ -1,0 +1,26 @@
+{
+  "name": "cors-guide",
+  "version": "0.0.1",
+  "description": "Demo project for CORS guide.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xg-wang/cors-guide.git"
+  },
+  "keywords": [
+    "cors",
+    "koa"
+  ],
+  "author": "Xingan Wang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xg-wang/cors-guide/issues"
+  },
+  "homepage": "https://github.com/xg-wang/cors-guide#readme",
+  "dependencies": {
+    "koa": "^2.3.0"
+  }
+}
