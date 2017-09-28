@@ -4,7 +4,7 @@
   "description": "Demo project for CORS guide.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,10 @@
   },
   "homepage": "https://github.com/xg-wang/cors-guide#readme",
   "dependencies": {
-    "koa": "^2.3.0"
+    "koa": "^2.3.0",
+    "koa-static": "^4.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
   }
 }
