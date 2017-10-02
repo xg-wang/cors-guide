@@ -23,8 +23,11 @@
     <script>
       const responseElement = document.querySelector('.response')
       document.querySelector('.send').addEventListener('click', function(e) {
-        fetch('http://localhost:3000/')
-          .then(res => res.text())
+        fetch('http://localhost:3000/', {
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        }).then(res => res.json())
           .then(res => responseElement.innerHTML = res)
           .catch(err => responseElement.innerHTML = err)
       })
