@@ -3,6 +3,7 @@ const app = new Koa();
 
 // cors middleware
 app.use(async (ctx, next) => {
+  ctx.set('Access-Control-Allow-Origin', 'http://localhost:8000');
   await next();
 });
 
