@@ -26,7 +26,8 @@
         fetch('http://localhost:3000/', {
           headers: {
             'Content-Type': 'application/json'
-          }
+          },
+          credentials: 'include'
         }).then(res => res.json())
           .then(res => responseElement.innerHTML = res)
           .catch(err => responseElement.innerHTML = err)
